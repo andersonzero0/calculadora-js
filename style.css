@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #AEB5BF;
+}
+
+.conteiner-calculadora {
+    margin-top: 50px;
+
+    width: 300px;
+    height: 400px;
+    background-color: #474F59;
+    border-radius: 16px;
+    box-shadow: 10px 10px 0px lightgray;
+    transition: ease .2s;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteiner-calculadora:hover {
+    box-shadow: 0px 0px 0px lightgray;
+    transition: ease .2s;
+}
+
+.conteiner-teclas {
+    width: 90%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 70%;
+}
+
+.box-teclas {
+    height: 25%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+button {
+    color: gray;
+}
+
+.box-teclas > button {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn-result {
+    background-color: #00B288;
+    color: white;
+    transition: ease .2s;
+}
+
+.btn-op {
+    background-color: #FF9800;
+    color: white;
+}
+
+.btn-dange {
+    background-color: #EB3107;
+    color: white;
+}
+
+.conteiner-painel {
+    width: 90%;
+    height: 12%;
+    border-radius: 8px;
+    font-size: 28px;
+
+    border: none;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.conteiner-painel:focus {
+    outline: none;
+}
